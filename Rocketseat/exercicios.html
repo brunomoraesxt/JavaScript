@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Exercícios JS</title>
+</head>
+
+<body>
+    <script>
+    /* Exercício 1
+    var endereco = {
+        rua: "rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+    }
+    console.log("O usuário mora em "+endereco.cidade+" / "+endereco.uf+" , no bairro "+endereco.bairro+" , na rua "+endereco.rua+" com nº "+endereco.numero+".");
+    */
+
+    /*Exercício 2
+
+        function pares(x,y){
+            while(x <= y){
+                if((x%2) == 0){
+                    console.log(x);
+                }
+            x++;    
+            }
+        }
+        pares(32, 321);
+    */
+
+    /*Exercício 3
+
+    function temHabilidade(skills){
+        
+        var resultado = skills.indexOf("Javascript");
+
+        if(resultado >= 0){
+            return true;
+        } else{
+            return false;
+        }
+
+    }
+
+    var skills = ["Javascript", "ReactJS", "React Native"];
+    console.log(temHabilidade(skills));
+    */
+
+    /*Exercício 4
+
+    function experiencia(anos){
+
+        if(anosEstudo < 1){
+            return "Iniciante";
+        } else if(anosEstudo >= 1 && anosEstudo <= 3){
+            return "Intermediário";
+        } else if(anosEstudo > 3 && anosEstudo <= 6){
+            return "Avançado";
+        } else if(anosEstudo >= 7){
+            return "Jedi master";
+        }
+
+    }
+    
+    var anosEstudo = 4;
+    console.log(experiencia(anosEstudo));
+    */
+
+    //Exercício 5
+        
+        var usuários = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript","ReactJS","Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        function info(dados){
+            for(var value of dados){
+                console.log("O", value.nome, "possui as habilidades:", value.habilidades.join(', '));
+            }
+        }
+        
+        info(usuários);
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Exercícios DOM</title>
+
+  </head>
+
+<body>
+<!-- EXERCICIO 1 E 2
+<button class="botao" id="adicionar_btn" onclick="gerarQuadrado()">Adicionar Elemento</button>
+<div class="app">
+
+<div class="quadrado" id="mudar_cor" onmouseover="getRandomColor()"></div>
+
+</div> -->
+<ul></ul>
+
+<input type="text" id="nome" />
+<button onclick="adicionar()">Adicionar</button>
+
+<script>
+
+// EXERCICO 1 E 2
+// var adicionarQuadrado = document.querySelector("#adicionar_btn");
+// var alterarCor = document.querySelector('#mudar_cor');
+
+// adicionarQuadrado.onclick = function(){
+//   var quadrado = document.createElement("div");
+//   quadrado.style.width = 100;
+//   quadrado.style.height = 100;
+//   quadrado.style.backgroundColor = "#F00";
+
+//   quadrado.onmouseover = function(){
+//     quadrado.style.backgroundColor = getRandomColor();
+//   };
+//   alterarCor.appendChild(quadrado);
+// }
+
+// function getRandomColor() {
+//  var letters = "0123456789ABCDEF";
+//  var color = "#";
+//  for (var i = 0; i < 6; i++) {
+//  color += letters[Math.floor(Math.random() * 16)];
+//  }
+// return color;
+// }
+
+var nomes = ["Diego", "Gabriel", "Lucas"];
+
+var elementoLista = document.querySelector("ul");
+
+var inputNewName = document.getElementById("nome");
+
+for (nome of nomes){
+  adicionarItem(nome);
+}
+
+function adicionarItem(nome){
+  console.log("TCL: adicionaItem -> nome", nome);
+
+  var elementoFilho = document.createElement("li");
+
+  var textoDoFilho = document.createTextNode(nome);
+
+  elementoFilho.appendChild(textoDoFilho);
+
+  elementoLista.appendChild(elementoFilho);
+}
+
+function adicionar(){
+  adicionarItem(inputNewName.value);
+
+  inputNewName.value = "";
+}
+
+</script>
+  
+</body>
+
+</html>
