@@ -7,13 +7,13 @@
   </head>
 
 <body>
-EXERCICIO 1 E 2
+<!-- EXERCICIO 1 E 2
 <button class="botao" id="adicionar_btn" onclick="gerarQuadrado()">Adicionar Elemento</button>
 <div class="app">
 
 <div class="quadrado" id="mudar_cor" onmouseover="getRandomColor()"></div>
 
-</div>
+</div> -->
 <ul></ul>
 
 <input type="text" id="nome" />
@@ -21,30 +21,30 @@ EXERCICIO 1 E 2
 
 <script>
 
-EXERCICO 1 E 2
-var adicionarQuadrado = document.querySelector("#adicionar_btn");
-var alterarCor = document.querySelector('#mudar_cor');
+// EXERCICO 1 E 2
+// var adicionarQuadrado = document.querySelector("#adicionar_btn");
+// var alterarCor = document.querySelector('#mudar_cor');
 
-adicionarQuadrado.onclick = function(){
-  var quadrado = document.createElement("div");
-  quadrado.style.width = 100;
-  quadrado.style.height = 100;
-  quadrado.style.backgroundColor = "#F00";
+// adicionarQuadrado.onclick = function(){
+//   var quadrado = document.createElement("div");
+//   quadrado.style.width = 100;
+//   quadrado.style.height = 100;
+//   quadrado.style.backgroundColor = "#F00";
 
-  quadrado.onmouseover = function(){
-    quadrado.style.backgroundColor = getRandomColor();
-  };
-  alterarCor.appendChild(quadrado);
-}
+//   quadrado.onmouseover = function(){
+//     quadrado.style.backgroundColor = getRandomColor();
+//   };
+//   alterarCor.appendChild(quadrado);
+// }
 
-function getRandomColor() {
- var letters = "0123456789ABCDEF";
- var color = "#";
- for (var i = 0; i < 6; i++) {
- color += letters[Math.floor(Math.random() * 16)];
- }
-return color;
-}
+// function getRandomColor() {
+//  var letters = "0123456789ABCDEF";
+//  var color = "#";
+//  for (var i = 0; i < 6; i++) {
+//  color += letters[Math.floor(Math.random() * 16)];
+//  }
+// return color;
+// }
 
 var nomes = ["Diego", "Gabriel", "Lucas"];
 
