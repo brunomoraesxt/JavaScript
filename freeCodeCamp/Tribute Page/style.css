@@ -1,0 +1,48 @@
+body{
+  background-color: rgba(000, 000, 000, 0.1);
+}
+#main{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+  font-size: 50px;
+}
+
+img{
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+
+#img-div{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#foto1{
+  width: 30%;
+  height: auto;
+  order: 1;
+}
+
+#foto2{
+  width: 30%;
+  height: auto;
+  order: 2;
+}
+
+#tribute-info{
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+  text-align: justify;
+  font-size: 20px;
+}
